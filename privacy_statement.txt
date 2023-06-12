@@ -1,0 +1,4 @@
+*** Privacy statement ***
+
+Hereby is granted, that the app (Shooting Settings) does only store the images and data provided by the user and does not send them to any
+third party service nor makes them available in any way on the internet. The user only agrees on the usage of his images in the context of the app itself.
