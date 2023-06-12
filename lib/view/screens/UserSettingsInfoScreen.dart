@@ -26,7 +26,7 @@ class _UserSettingsInfoScreenState extends State<UserSettingsInfoScreen> {
   final List<TabItem> tabs = [
     TabItem(icon: Icons.arrow_back, title: allTranslations.text("back"))
   ];
-  final String githubURL = "https://github.com/SebieF";
+  final String githubURL = "https://github.com/SebieF/shooting_device_assistant";
   final String paypalURL = "https://paypal.me/Sebie552";
 
   String _selectedLanguage = allTranslations.currentLanguage;
