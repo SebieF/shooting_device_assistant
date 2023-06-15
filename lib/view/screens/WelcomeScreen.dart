@@ -185,7 +185,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             if (index < _devices.length) {
               return _buildDecoratedDevice(index);
             }
-            return null;
+            return Container();
           });
     }
   }
