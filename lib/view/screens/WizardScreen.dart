@@ -497,6 +497,7 @@ class _WizardScreenState extends State<WizardScreen> {
 
       setState(() {
         _images.add(Tuple(FileImage(file), 0));
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
       });
     } catch (exception) {
       print("No picture selected");
@@ -508,6 +509,7 @@ class _WizardScreenState extends State<WizardScreen> {
       setState(() {
         _images.remove(longPressedImage);
         longPressedImage = null;
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
       });
     }
   }

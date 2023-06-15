@@ -259,6 +259,7 @@ class _DisciplineScreenState extends State<DisciplineScreen> {
         if (widget.device.disciplines.length == 0) {
           blinkButtonPressed = false;
         }
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
       });
     }
   }

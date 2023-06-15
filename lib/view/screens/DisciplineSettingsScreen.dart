@@ -377,7 +377,9 @@ class _DisciplineSettingsState extends State<DisciplineSettingsScreen>
           SettingImage(nextImageID, FileImage(file), nextSettingEntryID, 0);
       generalImageEntry.images.add(settingImage);
       await widget.configuration.addGeneralSettingImage(generalImageEntry);
-      setState(() {});
+      setState(() {
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
+      });
     } catch (exception) {
       print("No picture selected");
     }
@@ -396,8 +398,9 @@ class _DisciplineSettingsState extends State<DisciplineSettingsScreen>
   void deleteImage() async {
     if (widget.configuration.generalEntryForImage != null) {
       await widget.configuration.deleteCurrentSettingImage();
-      ScaffoldMessenger.of(context).hideCurrentSnackBar();
-      setState(() {});
+      setState(() {
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
+      });
     }
   }
 

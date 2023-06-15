@@ -277,6 +277,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         _longPressedDevice = null;
         if (_devices.length == 0) {
           blinkButtonPressed = false;
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
         }
       });
     }

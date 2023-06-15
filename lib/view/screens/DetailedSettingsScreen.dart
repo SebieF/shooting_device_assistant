@@ -446,6 +446,8 @@ class _DetailedSettingsState extends State<DetailedSettingsScreen> {
         _longPressedHistoryEntry = null;
         if (widget.setting.checkIfAllValuesCanBeConvertedToDouble())
           widget.setting.changeAllValuesToDouble();
+
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
       });
     }
   }
