@@ -77,7 +77,6 @@
   "grey": "grau",
   "light_grey": "hellgrau",
   "selected_language": "Aktuelle Sprache",
-  "info": "Version: 0.9.25\nEntwickler: Sebastian Franz - 2023\n",
   "new_name": "Neuer Name",
   "default_configuration_name": "Normale Einstellungen",
   "default_new_configuration_name": "Kopie",
@@ -133,5 +132,6 @@
   "show_website": "Website",
   "donate": "Spenden",
 
-  "share": "Teilen.."
+  "share": "Teilen..",
+  "info": "Version: 1.0.1\nEntwickler: Sebastian Franz - 2023\n"
 }
