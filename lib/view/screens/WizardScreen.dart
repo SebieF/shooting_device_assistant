@@ -491,7 +491,7 @@ class _WizardScreenState extends State<WizardScreen> {
       }
       if (imageSource == ImageSource.camera) {
         await GallerySaver.saveImage(image.path,
-            albumName: "ShootingSettingsApp");
+            albumName: "ShootingDeviceAssistant");
       }
       File file = File(image.path);
 

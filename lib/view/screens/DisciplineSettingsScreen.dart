@@ -147,8 +147,8 @@ class _DisciplineSettingsState extends State<DisciplineSettingsScreen>
                       discipline.generalEntryForImage!.images.isEmpty
                   ? TextButton(
                       child: Text(allTranslations.text("pick_overview_image"),
-                          style: TextStyle(
-                              color: Theme.of(context).primaryColor)),
+                          style:
+                              TextStyle(color: Theme.of(context).primaryColor)),
                       onPressed: showImageSnackBar,
                     )
                   : Container(),
@@ -363,7 +363,7 @@ class _DisciplineSettingsState extends State<DisciplineSettingsScreen>
 
       if (imageSource == ImageSource.camera) {
         await GallerySaver.saveImage(image.path,
-            albumName: "ShootingSettingsApp");
+            albumName: "ShootingDeviceAssistant");
       }
       File file = File(image.path);
 
