@@ -155,7 +155,7 @@ class _UserSettingsInfoScreenState extends State<UserSettingsInfoScreen> {
             setState(() {
               _selectedLanguage = language!;
               allTranslations.setNewLanguage(_selectedLanguage);
-              Navigator.of(context, rootNavigator: true).pop();
+              Navigator.of(context).pop();
               Navigator.of(context).push(
                   MaterialPageRoute<void>(builder: (BuildContext context) {
                 return UserSettingsInfoScreen(widget.shakeDetector);
